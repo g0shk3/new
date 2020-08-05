@@ -8,8 +8,7 @@ import javax.persistence.*;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cust_gen")
-    @SequenceGenerator(name = "cust_gen", sequenceName = "cust_gen", initialValue = 1,allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column
@@ -27,7 +26,7 @@ public class Employee {
 
     }
 
-    public Employee(String firstName, String lastName, String email, String item) {
+    public Employee(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

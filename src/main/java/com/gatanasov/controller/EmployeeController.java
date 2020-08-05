@@ -16,7 +16,7 @@ import java.util.Map;
 
 @CrossOrigin(origins = "https://g0shk3.netlify.app")
 @RestController
-@RequestMapping("api/v1/")
+@RequestMapping
 public class EmployeeController {
 
     private final EmployeeRepository employeeRepository;
@@ -30,7 +30,7 @@ public class EmployeeController {
 
 
     @GetMapping("/employees")
-    public List<Employee> getEmployee(){
+    public List<Employee> getEmployee( ){
         return employeeRepository.findAll();
     }
     // create employee rest api
