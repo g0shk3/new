@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://g0shke.netlify.app")
 @RestController
 @RequestMapping
 public class EmployeeController {
